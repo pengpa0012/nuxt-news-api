@@ -12,23 +12,27 @@
         class="w-full"
       />
       <div
-        class="p-5 pb-12 border border-gray-200 border-l-0 border-r-0 border-b-0"
+        class="p-3 sm:p-5 pb-12 border border-gray-200 border-l-0 border-r-0 border-b-0"
       >
         <div class="flex mb-4 y">
           <div>
-            <h1 class="font-black text-xl">
+            <h1 class="font-black text-sm sm:text-xl">
               {{ news.title }}
             </h1>
-            <p class="text-gray-600 italic">Source: {{ news.provider.name }}</p>
+            <p class="text-gray-600 italic text-sm sm:text-lg">
+              Source: {{ news.provider.name }}
+            </p>
           </div>
         </div>
-        <p class="truncate-overflow text-justify mb-8 text-gray-900">
+        <p
+          class="truncate-overflow text-justify mb-8 text-gray-900 text-xs sm:text-lg"
+        >
           {{ news.body }}
         </p>
         <a
           :href="news.url"
           target="_blank"
-          class="text-lg py-2 px-6 bg-gray-800 hover:bg-gray-900 text-white rounded"
+          class="text-sm sm:text-lg py-2 px-6 bg-gray-800 hover:bg-gray-900 text-white rounded"
         >
           Read More
         </a>

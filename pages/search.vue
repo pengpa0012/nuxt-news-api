@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="flex">
+    <div class="flex flex-col sm:flex-row">
       <input
         type="text"
         v-model="text"
-        class="border border-gray-400 focus:border-gray-700 rounded text-xl w-full mr-4  p-2"
+        class="mb-4 sm:mb-0 border border-gray-400 focus:border-gray-700 rounded text-sm sm:text-xl w-full mr-4  p-2"
       />
       <button
-        class="text-xl py-2 px-6 bg-gray-800 hover:bg-gray-900 text-white rounded"
+        class="text-sm sm:text-xl py-2 px-6 bg-gray-800 hover:bg-gray-900 text-white rounded"
         @click="searchNews"
       >
         Search

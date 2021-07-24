@@ -1,10 +1,12 @@
 <template>
   <div class="max-w-4xl mx-auto px-6">
     <div class="py-12 text-center font-light">
-      <span class="text-lg text-gray-500 mb-4 block"
+      <span class="text-sm sm:text-lg text-gray-500 mb-4 block"
         >Made by Godfrey Necesario</span
       >
-      <h1 class="text-6xl">Nuxt News <span class="font-bold">API</span></h1>
+      <h1 class="text-3xl sm:text-6xl">
+        Nuxt News <span class="font-bold">API</span>
+      </h1>
     </div>
     <Navbar />
     <Nuxt />
