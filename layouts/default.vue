@@ -21,8 +21,7 @@ export default {};
 @import url("https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400&display=swap");
 
 html {
-  --lh: 1.4rem;
-  line-height: var(--lh);
+  line-height: 1.4rem;
 }
 
 body {
@@ -35,18 +34,19 @@ img {
 }
 
 .truncate-overflow {
-  --max-lines: 6;
   position: relative;
-  max-height: calc(var(--lh) * var(--max-lines));
+  max-height: calc(1.4rem * 6);
   overflow: hidden;
   padding-right: 1rem; /* space for ellipsis */
 }
+
 .truncate-overflow::before {
   position: absolute;
   content: "...";
   inset-block-end: 0; /* "bottom" */
   inset-inline-end: 0; /* "right" */
 }
+
 .truncate-overflow::after {
   content: "";
   position: absolute;

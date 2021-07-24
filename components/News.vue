@@ -12,7 +12,7 @@
         class="w-full"
       />
       <div
-        class="p-3 sm:p-5 pb-12 border border-gray-200 border-l-0 border-r-0 border-b-0"
+        class="p-3 pb-6 sm:p-5 sm:pb-12 border border-gray-200 border-l-0 border-r-0 border-b-0"
       >
         <div class="flex mb-4 y">
           <div>
